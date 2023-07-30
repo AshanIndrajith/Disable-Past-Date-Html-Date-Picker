@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date Input with Min Attribute</title>
+</head>
+
+<body>
+    <div style="text-align: center;padding-top:200px;background-color: antiquewhite;padding-bottom:200px;">
+        <label for="dateInput">Select a date:</label>
+        <input type="date" id="dateInput">
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        var todayDate = new Date();
+        var month = todayDate.getMonth() + 1;
+        var year = todayDate.getFullYear();
+        var tdate = todayDate.getDate();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        if (tdate < 10) {
+            tdate = "0" + tdate;
+        }
+        var maxDate = year + "-" + month + "-" + tdate;
+        document.getElementById("dateInput").setAttribute("min", maxDate);
+        document.getElementById("demo").innerText = "The minimum allowed date is " + maxDate;
+        console.log(maxDate);
+    </script>
+</body>
+
+</html>
+
