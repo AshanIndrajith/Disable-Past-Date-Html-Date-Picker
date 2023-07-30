@@ -4,5 +4,5 @@
  thereby restricting any selection of dates in the past.
 
 
- <img src="https://github.com/AshanIndrajith/Disable-Past-Date-Html-Date-Picker/blob/main/image.jpg" style="display: flex; justify-content: center; align-items: center">
+ <img src="https://github.com/AshanIndrajith/Disable-Past-Date-Html-Date-Picker/blob/main/image.jpg" style="align-items: center"/>
  
